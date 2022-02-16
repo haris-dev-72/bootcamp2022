@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+ This is a basic workflow to help you get started with Actions
 
 name: BootCamp2022
 
@@ -29,12 +29,12 @@ jobs:
       - name: installing Node
         run: action/setup-node@v2-beta
         with: 
-            node-version: 12
+            node-version: 14
         
 
       # Runs a set of commands using the runners shell
       - name: installing surge
         run: npm install --global surge
-         
-      - name: deploying using surge
-         run: surge ./ bootcamp2022_1.surge.sh --token ${{secrets.token_secret}}
+  - name: deploying using surge
+  
+ run: surge ./ bootcamp2022_1.surge.sh --token ${{ secrets.token_secret }}
